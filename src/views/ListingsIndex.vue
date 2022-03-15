@@ -24,11 +24,12 @@ export default {
   <div class="home">
     <h1>All Listings</h1>
     <div v-for="listing in listings" v-bind:key="listing.id">
-      <h2>{{ listing.name }}</h2>
-      <!-- <img v-bind:src="listing.image_url" v-bind:alt="listing.name" /> -->
-      <p>Brand: {{ listing.brand }}</p>
-      <p>model: {{ listing.model }}</p>
-      <router-link v-bind:to="`/listings/${listing.id}`">{{ listing.name }}</router-link>
+      <router-link v-bind:to="`/listings/${listing.id}`">
+        <h2>{{ listing.brand }}</h2>
+      </router-link>
+      <!-- <img v-bind:src="listing.image_url" v-bind:alt="listing.brand" /> -->
+      <p>Model: {{ listing.model }}</p>
+      <p>Description: {{ listing.description }}</p>
     </div>
   </div>
 </template>
