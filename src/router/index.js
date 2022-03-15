@@ -1,6 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ListingsIndex from "../views/ListingsIndex.vue";
+import ListingsShow from "../views/ListingsShow.vue";
+import Signup from "../views/Signup.vue";
+import Login from "../views/Login.vue";
+import Logout from "../views/Logout.vue";
 
 const routes = [
   {
@@ -20,6 +24,26 @@ const routes = [
     path: "/listings",
     name: "listingsIndex",
     component: ListingsIndex,
+  },
+  {
+    path: "/listings/:id",
+    name: "listingsShow",
+    component: ListingsShow,
+  },
+  {
+    path: "/signup",
+    name: "signup",
+    component: Signup,
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: Login,
+  },
+  {
+    path: "/logout",
+    name: "logout",
+    component: Logout,
   },
 ];
 
