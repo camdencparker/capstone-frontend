@@ -30,7 +30,7 @@ export default {
   <div class="listings-show">
     <h2>{{ listing.brand }}</h2>
     <img v-bind:src="listing.image_url" v-bind:alt="listing.brand" />
-    <p>Width: {{ listing.model }}</p>
+    <p>Model: {{ listing.model }}</p>
     <p>Description: {{ listing.description }}</p>
     <router-link to="/listings">Back to all listings</router-link>
   </div>
