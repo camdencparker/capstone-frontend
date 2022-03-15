@@ -29,7 +29,6 @@ export default {
       </router-link>
       <!-- <img v-bind:src="listing.image_url" v-bind:alt="listing.brand" /> -->
       <p>Model: {{ listing.model }}</p>
-      <p>Description: {{ listing.description }}</p>
     </div>
   </div>
 </template>
