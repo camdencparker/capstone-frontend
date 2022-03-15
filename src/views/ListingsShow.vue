@@ -16,7 +16,7 @@ export default {
   methods: {
     destroyListing: function () {
       if (confirm("Are you sure you to delete this?")) {
-        axios.delete(`/listings/${this.recipe.id}`).then((response) => {
+        axios.delete(`/listings/${this.listing.id}`).then((response) => {
           console.log("Success", response.data);
           this.$router.push("/listings");
         });
