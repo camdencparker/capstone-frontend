@@ -11,6 +11,8 @@
     <router-link to="/login">Login</router-link>
     |
     <router-link to="/logout">Logout</router-link>
+    |
+    <router-link to="/usersShow">Profile</router-link>
   </nav>
   <router-view />
 </template>

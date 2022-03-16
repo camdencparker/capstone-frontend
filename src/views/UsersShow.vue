@@ -9,7 +9,7 @@ export default {
     };
   },
   created: function () {
-    axios.get(`/users/1`).then((response) => {
+    axios.get(`/users/${this.$route.params.id}`).then((response) => {
       this.user = response.data;
       console.log(this.user);
     });
@@ -37,7 +37,7 @@ export default {
     <div v-for="listing in this.user.listings" v-bind:key="listing.id">
       <p>{{ listing.brand }}</p>
       <router-link v-bind:to="`/listings/${listing.id}`">
-        <img v-bind:src="this.listing.image_url" v-bind:alt="listing.id" />
+        <img v-bind:src="listing.image_url" v-bind:alt="listing.id" />
       </router-link>
     </div>
     <button v-on:click="destroyUser()">Delete Profile</button>

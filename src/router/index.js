@@ -23,12 +23,12 @@ const routes = [
   },
   {
     path: "/listings",
-    name: "listingsIndex",
+    name: "listings-index",
     component: ListingsIndex,
   },
   {
     path: "/listings/:id",
-    name: "listingsShow",
+    name: "listings-show",
     component: ListingsShow,
   },
   {
@@ -48,7 +48,7 @@ const routes = [
   },
   {
     path: "/users/:id",
-    name: "usersShow",
+    name: "users-show",
     component: UsersShow,
   },
 ];
